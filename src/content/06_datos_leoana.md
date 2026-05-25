@@ -96,6 +96,37 @@ La filtración masiva demuestra la relevancia de que las personas puedan:
 Los derechos ARCO fortalecen la privacidad y aumentan el control ciudadano sobre información digital.
 
 ---
+## Relación de los derechos ARCO con el caso Equifax
+### Derecho de acceso
+
+Las personas afectadas deberían poder conocer qué información personal almacenaba Equifax y qué datos fueron comprometidos durante la filtración.
+
+Este derecho permite a los usuarios solicitar información relacionada con el tratamiento de sus datos personales.
+
+---
+
+### Derecho de rectificación
+
+En caso de existir información incorrecta o alterada, las personas afectadas tienen derecho a solicitar corrección de sus datos personales.
+
+La protección de información precisa resulta fundamental para evitar consecuencias negativas relacionadas con antecedentes financieros o identidad digital.
+
+---
+
+### Derecho de cancelación
+
+Las víctimas podrían solicitar eliminación de información almacenada cuando el tratamiento de datos no resulte necesario o afecte sus derechos.
+
+Este derecho busca proteger privacidad y reducir riesgos relacionados con almacenamiento excesivo de información.
+
+---
+
+### Derecho de oposición
+
+Las personas pueden oponerse al uso de sus datos personales en determinadas situaciones relacionadas con tratamiento indebido o inseguro de información digital.
+
+Este derecho fortalece el control de los usuarios sobre su privacidad.
+---
 
 # Riesgos derivados de la filtración
 
