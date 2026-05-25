@@ -1,22 +1,67 @@
+import { useState } from "react"
+import ReactMarkdown from "react-markdown"
+
+import resumen from "./content/01_resumen_leoana.md?raw"
+import marco from "./content/02_marco_leoana.md?raw"
+import delitos from "./content/03_delitos_leoana.md?raw"
+import comparacion from "./content/04_comparacion_leoana.md?raw"
+import responsabilidades from "./content/05_responsabilidades_leoana.md?raw"
+import datos from "./content/06_datos_leoana.md?raw"
+import conclusiones from "./content/07_conclusiones_leoana.md?raw"
+import prompts from "./content/08_prompts_leoana.md?raw"
+
 function App() {
 
   const sections = [
-    "Resumen Ejecutivo",
-    "Marco Normativo",
-    "Delitos Informáticos",
-    "Comparación Normativa",
-    "Responsabilidades",
-    "Datos Personales",
-    "Conclusiones",
-    "Prompts IA"
+    {
+      title: "Resumen Ejecutivo",
+      content: resumen
+    },
+
+    {
+      title: "Marco Normativo",
+      content: marco
+    },
+
+    {
+      title: "Delitos Informáticos",
+      content: delitos
+    },
+
+    {
+      title: "Comparación Normativa",
+      content: comparacion
+    },
+
+    {
+      title: "Responsabilidades",
+      content: responsabilidades
+    },
+
+    {
+      title: "Datos Personales",
+      content: datos
+    },
+
+    {
+      title: "Conclusiones",
+      content: conclusiones
+    },
+
+    {
+      title: "Prompts IA",
+      content: prompts
+    }
   ]
+
+  const [selected, setSelected] = useState(sections[0])
 
   return (
     <div className="min-h-screen flex bg-gray-100">
 
       {/* SIDEBAR */}
 
-      <aside className="w-72 bg-blue-950 text-white p-6 shadow-xl">
+      <aside className="w-72 bg-blue-950 text-white p-6 shadow-xl overflow-y-auto">
 
         <h1 className="text-3xl font-bold mb-2">
           Informe
@@ -30,12 +75,26 @@ function App() {
           <ul className="space-y-4">
 
             {sections.map((section, index) => (
+
               <li
                 key={index}
-                className="bg-blue-900 hover:bg-blue-800 transition p-3 rounded-xl cursor-pointer"
+                onClick={() => setSelected(section)}
+                className={`
+  p-3
+  rounded-xl
+  cursor-pointer
+  transition
+  ${
+    selected.title === section.title
+      ? "bg-white text-blue-950 font-bold"
+      : "bg-blue-900 hover:bg-blue-800 text-white"
+  }
+`}
+              
               >
-                {section}
+                {section.title}
               </li>
+
             ))}
 
           </ul>
@@ -45,51 +104,19 @@ function App() {
 
       {/* CONTENIDO */}
 
-      <main className="flex-1 p-10">
+      <main className="flex-1 p-10 overflow-y-auto">
 
         <div className="bg-white rounded-3xl shadow-lg p-10">
 
-          <h2 className="text-4xl font-bold mb-6 text-blue-950">
-            Análisis de Ciberseguridad:
-            Caso Equifax
+          <h2 className="text-4xl font-bold mb-8 text-blue-950">
+            {selected.title}
           </h2>
 
-          <p className="text-lg mb-6 leading-relaxed">
-            Este proyecto analiza uno de los incidentes de filtración
-            de datos más importantes de la historia moderna,
-            abordando aspectos relacionados con delitos informáticos,
-            protección de datos personales y responsabilidad empresarial.
-          </p>
+          <div className="max-w-none text-gray-800 leading-relaxed space-y-4">
 
-          <div className="grid md:grid-cols-2 gap-6 mt-10">
-
-            <div className="bg-gray-100 rounded-2xl p-6 shadow-sm">
-              <h3 className="text-2xl font-bold mb-4">
-                Contenido del informe
-              </h3>
-
-              <ul className="space-y-2 list-disc pl-5">
-                <li>Ley 21.459</li>
-                <li>Ley 19.628</li>
-                <li>GDPR</li>
-                <li>ISO 27001</li>
-                <li>Derechos ARCO</li>
-                <li>Fraude informático</li>
-              </ul>
-            </div>
-
-            <div className="bg-gray-100 rounded-2xl p-6 shadow-sm">
-              <h3 className="text-2xl font-bold mb-4">
-                Objetivo
-              </h3>
-
-              <p className="leading-relaxed">
-                Analizar el impacto del caso Equifax desde
-                una perspectiva legal, tecnológica y organizacional,
-                comprendiendo la importancia de la ciberseguridad
-                y la protección de datos personales.
-              </p>
-            </div>
+            <ReactMarkdown>
+              {selected.content}
+            </ReactMarkdown>
 
           </div>
 
