@@ -85,7 +85,30 @@ Los datos filtrados podían ser utilizados para:
 La Ley 21.459 contempla sanciones para quienes utilicen sistemas informáticos con fines fraudulentos o para obtener beneficios económicos ilícitos.
 
 En este contexto, la filtración de datos incrementa significativamente los riesgos para las víctimas afectadas.
+---
+## Artículos aplicables de la Ley 21.459
 
+### Artículo 2: Acceso ilícito
+
+Este artículo sanciona a quienes acceden sin autorización a sistemas informáticos.
+
+En el caso Equifax, los atacantes ingresaron ilegalmente a servidores internos mediante la explotación de una vulnerabilidad, obteniendo acceso no autorizado a información confidencial.
+
+---
+
+### Artículo 4: Ataque a la integridad de los datos informáticos
+
+Este artículo sanciona acciones destinadas a alterar, dañar o afectar datos informáticos.
+
+Los atacantes comprometieron información digital sensible perteneciente a millones de usuarios, afectando la integridad y seguridad de los datos almacenados.
+
+---
+
+### Artículo 7: Fraude informático
+
+Este artículo sanciona conductas relacionadas con manipulación informática destinada a obtener beneficios ilegítimos.
+
+La información robada podía utilizarse para fraudes financieros, robo de identidad y otras actividades ilícitas relacionadas con delitos digitales.
 ---
 
 ## Responsabilidad de la empresa
