@@ -28,6 +28,31 @@ Estas acciones constituyen delitos informáticos relacionados con:
 - fraude informático
 - robo de información digital
 
+## Tipos de responsabilidad
+
+### Responsabilidad penal
+
+Los atacantes poseen responsabilidad penal debido a la comisión de delitos informáticos relacionados con acceso ilícito, robo de información y fraude informático, según la Ley 21.459.
+
+Estas conductas pueden ser sancionadas penalmente debido al daño provocado sobre sistemas informáticos y datos personales.
+
+---
+
+### Responsabilidad civil
+
+Los responsables también podrían enfrentar responsabilidad civil por los daños económicos y perjuicios ocasionados a las víctimas afectadas por la filtración de información.
+
+Las personas afectadas podrían exigir compensaciones relacionadas con:
+- pérdidas económicas
+- robo de identidad
+- daños financieros
+- afectación de privacidad
+
+---
+
+### Responsabilidad administrativa
+
+Las investigaciones relacionadas con incidentes de ciberseguridad también pueden involucrar procesos administrativos vinculados al tratamiento indebido de datos personales y seguridad digital.
 ---
 
 ## Impacto generado por los atacantes
